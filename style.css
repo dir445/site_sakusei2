@@ -3,14 +3,69 @@ html {
   font-size: 100%;
 }
 
-header ol li a:hover{
+header{
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #333;
+    padding-left: 2em;
+}
+
+header ul li a:hover{
     color: #0bd;
 }
 
+h2{
+    font-family: 'Philosopher', sans-serif;
+}
+
+footer{
+    background-color: #443222;
+}
+
+footer p{
+    padding-top: 2em;
+    text-align: center;
+}
+
+footer small{
+    color: #fff;
+}
+
+/*index*/
 .index{
     background-image:url("images/main-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+
+.index main > *{
+    text-align: center;
+}
+
+.index main button{
+    background-color :#04badd;
+    padding: 1em 2em ;
+    border-radius: 0.5em;
+}
+
+.index main button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*news*/
+.cyan{
+    background-color: #04badd;
+}
+.cyan *{
+    color: #fff;
 }
