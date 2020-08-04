@@ -18,50 +18,45 @@ html {
 h2{
     font-family: 'Philosopher', sans-serif;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 @media(min-width :600px){
     h2{
-        font-size: 4em;
+        font-size: 5rem;
     }
 }
 
 h4{
+    font-size:1.4rem;
     border-bottom: solid 2px #04badd;
+    padding: 0 1rem 0.75rem;
+    font-weight: bold;
 }
 
 /*header*/
-header {
+header nav {
     text-align: center;
-    border: 1px solid red;
 }
 
-header > a{
-    border: 1px solid yellow;
-}
 
-header > a img{
-    border: 1px solid green;
-    width: 240px
+header a img{
+    width: 240px;
 }
 
 header ul{
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
 header ul li{
-    border: 1px solid cyan;
     padding:0 1.5em 0;
 }
 
 header ul li a{
     text-decoration: none;
-    border: 1px solid cyan;
 }
 
 header ul li a:hover{
@@ -69,7 +64,7 @@ header ul li a:hover{
 }
 
 @media(min-width :600px){
-    header{
+    header nav{
         width: 100%;
         margin: auto;
         display: flex;
@@ -84,13 +79,12 @@ header ul li a:hover{
 
 @media(min-width:900px)
 {
-    header{
+    header nav{
         width: 900px;
     }
 }
 
 /*footer*/
-
 footer{
     background-color: #443222;
 }
@@ -103,7 +97,6 @@ footer p{
 footer small{
     color: #fff;
 }
-
 
 /*index*/
 .index{
@@ -145,17 +138,20 @@ footer small{
 }
 
 /*news*/
-.news{
-    /*background-image: url("images/news-bg.jpg");*/
+.news header{
+    background-image: url("images/news-bg.jpg");
+}
+
+.news main{
+    padding: 50px 25px;
 }
 
 .news main article{
-    border: solid 1px green;
-    padding-bottom: 5vh;
+    padding-bottom: 50px;
 }
 
 .news h2{
-    margin: 1.5em 0;
+    padding: 1.5em 0;
 }
 
 .news main article .newsdate{
@@ -166,16 +162,16 @@ footer small{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border:solid 2px green;
     float: left;
 }
 .news main article .newsdate .date{
-    font-size: 18pt;
+    font-size: 1.5rem;
     border-bottom: solid 1px #8ed9ed;
 }
 
 .news main article .newsdate .year{
-    font-size: 14pt;
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
 }
 
 .news main article .title{
@@ -191,24 +187,43 @@ footer small{
 .news main article img{
     clear:both;
     width: 100%;
+    padding-top: 50px;
 }
 
 .news aside section{
     padding-bottom: 5vh;
 }
 
-.news aside h4,
-.news aside li,
-.news aside p{
-    padding: 0.5em 0;
+.news aside ul{
+    list-style: none;
+}
+
+.news article >p{
+    padding-top: 1em;
 }
 
 .news aside li{
+    font-size: 1.2em;
+    padding: 0.75rem 1rem;
+}
+
+.news aside p{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.news aside ul li{
     border-bottom: solid 2px #eee;
 }
 
 .news aside ul li a{
     text-decoration: none;
+}
+
+@media(min-width :600px){
+    .news main{
+        display: flex;
+    }
 }
 
 /*menu*/
