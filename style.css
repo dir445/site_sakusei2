@@ -2,10 +2,8 @@
 html {
     font-size: 100%;
     overflow-y: scroll;
-}
-
-body{
     font-family: 'Noto Sans JP', sans-serif;
+    
 }
 
 *{
@@ -387,21 +385,6 @@ footer small{
 .contact .sns h4{
     margin-bottom: 30px;
 }
-
-/*
-.contact .youtube-container{
-  
-    position: relative;
-    padding-bottom: 56.25%;
-    border: 1px solid red;
-}
-.contact .youtube-container iframe{
-    position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%;
-    height: 100%
-}*/
 
 @media(min-width :600px){
     .contact #name,
